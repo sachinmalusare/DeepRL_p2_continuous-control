@@ -71,14 +71,14 @@ I have choosen the Version 1 (with one agent) for implementation. For detailed i
 - Train the agent with DDPG
 - Evaluate the smart agent
 
-###Results
+### Results
 
 Environment solved in 200 episodes with an Average Score of 37.27
 
 <p align=center><img src="Score.png" alt="scores" width="400"/></p>
 
 
-### 4. Watch a Smart Agent!
+### Watch a Smart Agent!
 Loaded the trained weights from file to watch a smart agent!
 <p align=center><img src="TrainedAgent.gif" alt="agent" width="400" height="200"/></p>
 

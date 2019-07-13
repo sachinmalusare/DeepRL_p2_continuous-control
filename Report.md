@@ -1,10 +1,10 @@
-#Deep Reinforcement Learning: Project Navigation
+# Deep Reinforcement Learning: Project Navigation
 
 
 I have explored the details from the [CONTINUOUS CONTROL WITH DEEP REINFORCEMENTLEARNING](https://arxiv.org/pdf/1509.02971.pdf) 
 Then revisited the the Udacity repo [DDPG-Bipedal](https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-bipedal) . Adapted the code from the repo, tried to tweak various hyperparameters. Solved the project on my GPU laptop.
 
-###1. Started the Unity enviornment:
+### 1. Started the Unity enviornment:
 ```
 env = UnityEnvironment(file_name="./Reacher_Linux/Reacher.x86_64")
 ```
@@ -24,7 +24,7 @@ Explored how to use the Python API to control the agent and receive feedback fro
 
 <p align=center><img src="NonTrainedAgent.gif" alt="agent" width="400" height="200"/></p>
 
-### 3. Train the Agent with DDPG
+### 4. Train the Agent with DDPG
 
 The code consist of :
 
@@ -41,7 +41,7 @@ The code consist of :
             critic_target(state, action) -> Q-value
         ```
 
-###4.Model for agent and neural network
+### 5. Model for agent and neural network
 Agent Class was created in the dqn_agent.py file. It contains satic parameters as mentioned below:
 
 - BUFFER_SIZE = int(1e6)  # replay buffer size
@@ -74,16 +74,16 @@ The Critic Neural Networks use the following architecture :
   - Fully Connected Layer (128 nodes, Relu activation) 
    -  Batch Normlization
    -  Include Actions at the second fully connected layer
-   - Fully Connected Layer (128+4 nodes, Relu activation) 
+   - Fully Connected Layer 
    - Ouput node (1 node, no activation)
-###Results
+### 7. Results
 
 Environment solved in 200 episodes with an Average Score of 37.27
 
 <p align=center><img src="Score.png" alt="scores" width="400"/></p>
 
 
-### 4. Watch a Smart Agent!
+### 8. Watch a Smart Agent!
 Loaded the trained weights from saved file to watch a smart agent!
 <p align=center><img src="TrainedAgent.gif" alt="agent" width="400" height="200"/></p>
 
